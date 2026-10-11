@@ -1,6 +1,6 @@
 (() => {
   /* >>> AJUSTAR: segundo do vídeo em que abre a secção de depoimentos (e, no último, o CTA final) <<< */
-  const UNLOCK_AT = 194; // 3:14 em segundos (provisório)
+  const UNLOCK_AT = 155; // 2:58 em segundos
   const KEY = 'autotaxa_cargo_unlocked';
 
   /* ---- Barra de prova social (número simulado, sem servidor) ---- */
