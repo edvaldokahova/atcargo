@@ -4,7 +4,7 @@
   const KEY = 'autotaxa_cargo_unlocked';
 
   /* ---- Barra de prova social (número simulado, sem servidor) ---- */
-  const BAR_AT = 155;          // segundo do vídeo em que a barra aparece (provisório: ajustar ao vídeo da Cargo)
+  const BAR_AT = 150;          // segundo do vídeo em que a barra aparece (provisório: ajustar ao vídeo da Cargo)
   const $ = (id) => document.getElementById(id);
   const video = $('vslVideo');
   const soundBtn = $('soundBtn');
