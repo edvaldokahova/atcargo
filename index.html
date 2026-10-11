@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>AutoTaxa Cargo — Saiba se a sua importação dá lucro antes de comprar</title>
-  <meta name="description" content="Planilha para importadores de mercadorias em Angola: veredito GO / NÃO COMPRAR, stress test de câmbio e atraso no porto, armazenagem e caixa — tudo em Kwanzas.">
+  <meta name="description" content="Planilha para importadores de mercadorias em Angola: veredito GO / NÃO COMPRAR, stress test de câmbio e atraso no porto, armazenagem e caixa, tudo em Kwanzas.">
   <meta name="theme-color" content="#2d2177">
-  <meta property="og:title" content="AutoTaxa Cargo — Você está no controle da sua importação">
-  <meta property="og:description" content="Veredito, stress test, armazenagem e caixa numa única planilha.">
+  <meta property="og:title" content="AutoTaxa Cargo — Saiba se o seu contentor dá lucro antes de pagar o sinal">
+  <meta property="og:description" content="Veredito, stress test, armazenagem e caixa numa única planilha, em Kwanzas.">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/v2/laptop.webp" type="image/webp">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap">
   <link rel="stylesheet" href="styles.css">
-  <!-- Meta Pixel (apenas carregamento + PageView; os eventos de conversão vêm da plataforma de checkout) -->
+  <!-- Meta Pixel (apenas carregamento + PageView; os eventos de conversão vêm da OkandaPay) -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init','2337044630374395');
@@ -22,77 +25,105 @@
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2337044630374395&ev=PageView&noscript=1" alt=""></noscript>
   <!-- UTMify (passo final): colar aqui o script de UTMs do produto Cargo -->
 </head>
-<body>
+<body class="v2">
 
 <div class="live-bar" id="liveBar" hidden>🔥 <b id="liveNum">0</b> importadores já viram esta oferta hoje</div>
 
-<main class="hero">
-  <div class="wrap">
-    <span class="eyebrow">Para importadores de mercadorias em Angola</span>
-
-    <h1>Saiba se o seu contentor <mark>dá lucro</mark> ou prejuízo <span class="soft">antes de pagar o sinal ao fornecedor</span></h1>
-
-    <p class="sub">Dólar a subir, dias a mais no porto, armazenagem a acumular: veja o impacto em Kwanzas antes de comprar. Você está no controle.</p>
-
-    <div class="vsl" id="vsl">
-      <video id="vslVideo" muted autoplay playsinline webkit-playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate">
-        <source src="assets/vsl.mp4" type="video/mp4">
-      </video>
-      <button class="sound-btn" id="soundBtn" type="button" aria-label="Ativar som do vídeo">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
-        Toque para ativar o som
-      </button>
-      <div class="vsl-bar"><i id="vslBar"></i></div>
-    </div>
-    <p class="vsl-note">Veja o vídeo com o som ligado</p>
+<main>
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">Para importadores de mercadorias em Angola</span>
+  <h1>Saiba se o seu contentor <mark>dá lucro</mark> ou prejuízo <span class="soft">antes de pagar o sinal ao fornecedor</span></h1>
+  <p class="sub">Dólar a subir, dias a mais no porto, armazenagem a acumular: veja o impacto em Kwanzas antes de comprar.</p>
+  <a class="btn" id="mainCta" href="https://okandapay.com/checkout/planilha-calculadora-autotaxa-cargo-mv1c8397?pid=7a7638f3-526f-4d42-95f4-f4718d9a4adf">QUERO A AUTOTAXA CARGO POR 21.997 Kz<span>Entrega imediata no seu email · Pagamento seguro</span></a>
+  <p class="trust"><span><i>✔</i>Garantia de 7 dias</span><span><i>✔</i>Suporte no WhatsApp</span><span><i>✔</i>Entrega imediata</span></p>
+  <img class="hero-img" src="assets/v2/laptop.webp" width="900" height="546" alt="Planilha AutoTaxa Cargo com o stress test de atraso no porto e subida do dólar" fetchpriority="high">
+  <div class="example" aria-label="Exemplo da planilha">
+    <div><b>13,4 M Kz</b><span>lucro previsto no cenário base</span></div>
+    <div><b>406 mil Kz</b><span>com 30 dias no porto e dólar +10%</span></div>
+    <div><b>(2,2 M Kz)</b><span>com 30 dias no porto e dólar +15%</span></div>
   </div>
+  <p class="example-note">Exemplo calculado pela planilha: 1 contentor de 40' de electrodomésticos, câmbio 945,51 Kz.</p>
+</div></header>
+
+<section><div class="wrap">
+  <h2>O veredito, <span>antes de pagar o sinal</span></h2>
+  <p class="lead">Preencha a proforma do fornecedor e a planilha diz-lhe GO, ATENÇÃO ou NÃO COMPRAR.</p>
+  <div class="split">
+    <img class="phone" src="assets/v2/phone.webp" width="520" height="803" alt="AutoTaxa Cargo no telemóvel: simulador de decisão antes de comprar" loading="lazy">
+    <ul class="list">
+      <li><b>Veredito GO / ATENÇÃO / NÃO COMPRAR</b>, com as suas regras de margem mínima.</li>
+      <li><b>Stress test</b>: atraso no porto e subida do dólar, cada combinação em Kwanzas.</li>
+      <li><b>Custo total desembaraçado</b>: direitos, IVA, despachante, taxas do porto e armazenagem.</li>
+      <li><b>Controlo de contentores</b> com alerta antes de acabarem os dias livres.</li>
+      <li><b>Caixa e pagamentos</b>, com a exposição ao câmbio e o real vs orçamento.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Veja a planilha <span>por dentro</span></h2>
+  <p class="lead">Do simulador ao controlo de cada contentor.</p>
+  <div class="carousel phones" aria-label="Ecrãs da planilha">
+    <figure><img src="assets/v2/p-veredito.webp" width="340" height="407" alt="Como ler o veredito" loading="lazy"><figcaption>Ler o veredito</figcaption></figure>
+    <figure><img src="assets/v2/p-simulador.webp" width="340" height="407" alt="Simulador de decisão" loading="lazy"><figcaption>Simulador</figcaption></figure>
+    <figure><img src="assets/v2/p-stress.webp" width="340" height="407" alt="Stress test" loading="lazy"><figcaption>Stress test</figcaption></figure>
+    <figure><img src="assets/v2/p-contentores.webp" width="340" height="407" alt="Controlo de contentores" loading="lazy"><figcaption>Contentores</figcaption></figure>
+    <figure><img src="assets/v2/p-caixa.webp" width="340" height="407" alt="Pagamentos e caixa" loading="lazy"><figcaption>Pagamentos e caixa</figcaption></figure>
+    <figure><img src="assets/v2/p-real.webp" width="340" height="407" alt="Real versus orçamento" loading="lazy"><figcaption>Real vs orçamento</figcaption></figure>
+    <figure><img src="assets/v2/p-painel.webp" width="340" height="407" alt="Painel e checklist" loading="lazy"><figcaption>Painel e checklist</figcaption></figure>
+  </div>
+  <p class="swipe">Deslize para o lado para ver mais →</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>O Veredito dos <span>Importadores</span></h2>
+  <p class="lead">Mensagens reais de clientes no WhatsApp.</p>
+  <div class="carousel" aria-label="Testemunhos de clientes">
+    <img src="assets/v2/prova-1.webp" width="560" height="840" alt="Testemunho de cliente no WhatsApp 1" loading="lazy">
+    <img src="assets/v2/prova-2.webp" width="560" height="840" alt="Testemunho de cliente no WhatsApp 2" loading="lazy">
+    <img src="assets/v2/prova-3.webp" width="560" height="840" alt="Testemunho de cliente no WhatsApp 3" loading="lazy">
+    <img src="assets/v2/prova-4.webp" width="560" height="840" alt="Testemunho de cliente no WhatsApp 4" loading="lazy">
+    <img src="assets/v2/prova-5.webp" width="560" height="840" alt="Testemunho de cliente no WhatsApp 5" loading="lazy">
+  </div>
+  <p class="swipe">Deslize para o lado para ver mais →</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Perguntas <span>frequentes</span></h2>
+  <details><summary>Os valores são exatos?</summary><p>A planilha calcula com os dados que você introduz (câmbio, taxas, tarifas do despachante, do terminal e do armador) e dá-lhe uma estimativa. O valor final pode variar por reavaliação aduaneira ou câmbio aplicado, por isso confirme com o seu despachante antes de pagar o sinal. Não garantimos lucro nem resultados de negócio.</p></details>
+  <details><summary>Serve para que tipo de mercadoria?</summary><p>Para qualquer carga em contentor, de 20' ou 40': electrodomésticos, electrónicos, peças, roupa e outras. Você escolhe a categoria e o tipo de contentor, e pode renomeá-los.</p></details>
+  <details><summary>Preciso de saber Excel?</summary><p>Não. Você só preenche as células azuis e a planilha calcula o resto. Vem com manual de utilização em PDF, passo a passo, e um checklist do importador.</p></details>
+  <details><summary>Em que programa funciona?</summary><p>Abre no Excel, no computador ou no telemóvel.</p></details>
+  <details><summary>E se as taxas ou o câmbio mudarem?</summary><p>Basta atualizar os valores na folha PARÂMETROS e tudo é recalculado. Você configura uma vez e ajusta quando as tarifas mudarem.</p></details>
+  <details><summary>Como recebo depois de pagar?</summary><p>O acesso é digital e imediato, enviado para o email ou contacto indicado no checkout. Se tiver qualquer dificuldade, fale connosco no WhatsApp.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Tem 7 dias para pedir o reembolso integral, sem precisar de explicar o motivo, pelo WhatsApp ou por email.</p></details>
+</div></section>
+
+<section><div class="wrap">
+  <div class="offer">
+    <h2>AutoTaxa Cargo</h2>
+    <div class="price">21.997 Kz<small>Pagamento único · Entrega imediata no seu email</small></div>
+    <ul>
+      <li>Planilha AutoTaxa Cargo: simulador, stress test, contentores e caixa</li>
+      <li>Manual de utilização em PDF</li>
+      <li>Checklist do importador</li>
+      <li>Suporte no WhatsApp</li>
+    </ul>
+    <a class="btn" id="finalCta" href="https://okandapay.com/checkout/planilha-calculadora-autotaxa-cargo-mv1c8397?pid=7a7638f3-526f-4d42-95f4-f4718d9a4adf">QUERO A AUTOTAXA CARGO<span>Pagamento seguro</span></a>
+    <div class="guarantee"><em>🛡️</em><p><b>100% dinheiro de volta em 7 dias.</b> Se não for para si, devolvemos o valor total, sem perguntas.</p></div>
+  </div>
+  <p class="example-note" style="margin-top:12px">100% dinheiro de volta · 7 dias garantido</p>
+</div></section>
 </main>
 
-<!-- Libertada em UNLOCK_AT (main.js) -->
-<section class="proof" id="veredito" hidden aria-label="O Veredito dos Importadores">
-  <div class="proof-track" id="proofTrack">
-    <div class="proof-sticky">
-      <h2>O Veredito dos <span>Importadores</span></h2>
-      <p class="proof-sub">Mensagens reais de clientes no WhatsApp</p>
+<footer class="site-footer"><div class="wrap">
+  <nav><a href="termos.html">Termos de Uso</a><a href="privacidade.html">Política de Privacidade</a><a href="https://wa.me/244955968159" rel="noopener">Suporte</a></nav>
+  <p>A AutoTaxa é um produto independente e não é afiliada, aprovada ou mantida pela AGT. Os valores calculados dependem dos dados que o utilizador introduz, são estimativas e não substituem a consulta a um despachante oficial. Não garantimos lucro nem resultados de negócio.</p>
+  <p>© <span id="year">2026</span> A Bilonai Group. Todos os direitos reservados.</p>
+</div></footer>
 
-      <div class="proof-stage" id="proofStage">
-        <img src="assets/provas/prova-1.png" alt="Testemunho de cliente no WhatsApp 1" loading="lazy">
-        <img src="assets/provas/prova-2.png" alt="Testemunho de cliente no WhatsApp 2" loading="lazy">
-        <img src="assets/provas/prova-3.png" alt="Testemunho de cliente no WhatsApp 3" loading="lazy">
-        <img src="assets/provas/prova-4.png" alt="Testemunho de cliente no WhatsApp 4" loading="lazy">
-        <img src="assets/provas/prova-5.png" alt="Testemunho de cliente no WhatsApp 5" loading="lazy">
-      </div>
+<div class="sticky" id="sticky"><a class="btn" href="https://okandapay.com/checkout/planilha-calculadora-autotaxa-cargo-mv1c8397?pid=7a7638f3-526f-4d42-95f4-f4718d9a4adf">QUERO A AUTOTAXA CARGO · 21.997 Kz<span>Pagamento seguro · Garantia de 7 dias</span></a></div>
 
-      <div class="dots" id="proofDots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="scroll-hint" id="scrollHint">Deslize para ver mais ↓</p>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <nav>
-      <a href="termos.html">Termos de Uso</a>
-      <a href="privacidade.html">Política de Privacidade</a>
-      <a href="https://wa.me/244955968159" rel="noopener">Suporte</a>
-    </nav>
-    <p>A AutoTaxa é um produto independente e não é afiliada, aprovada ou mantida pela AGT. Os valores calculados dependem dos dados que o utilizador introduz, são estimativas e não substituem a consulta a um despachante oficial. Não garantimos lucro nem resultados de negócio.</p>
-    <p>© <span id="year">2026</span> A Bilonai Group. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-<a class="shortcut" id="shortcut" href="#veredito">👇 Ver quem já usa a AutoTaxa Cargo</a>
-
-<!-- CTA: aparece no último testemunho -->
-<div class="cta-card" id="ctaCard">
-  <p><b>AutoTaxa Cargo</b> — simulador, stress test, contentores, caixa e manual em PDF</p>
-  <a class="btn" href="https://okandapay.com/checkout/planilha-calculadora-autotaxa-cargo-mv1c8397?pid=7a7638f3-526f-4d42-95f4-f4718d9a4adf">
-    QUERO A AUTOTAXA CARGO POR 21.997 Kz
-    <span>Acesso digital imediato · Pagamento seguro</span>
-  </a>
-  <small>Última atualização da planilha: outubro de 2026</small>
-</div>
-
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
